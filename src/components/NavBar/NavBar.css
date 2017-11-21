@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 3em;
+  background-color: #fff;
+  box-shadow: 0 0 1em 0 #9E9E9E;
+  font-family: "Lato", sans-serif;
+  font-size: 18px; }
+  .nav .fa-bars, .nav .brand, .nav a {
+    color: #9E9E9E;
+    margin: 0 1em;
+    text-decoration: none; }

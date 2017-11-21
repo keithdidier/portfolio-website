@@ -1,0 +1,19 @@
+@import "main.scss";
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 3em;
+    background-color: #fff;
+    box-shadow: 0 0 1em 0 $text-color;
+    font-family: $primary-font;
+    font-size: 18px;
+
+    .fa-bars, .brand, a {
+        color: $text-color;
+        margin: 0 1em;
+        text-decoration: none;
+    }
+}
