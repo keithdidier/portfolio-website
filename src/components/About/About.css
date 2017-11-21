@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+.about-wrapper {
+  font-family: "Lato", sans-serif;
+  color: #2c3e50;
+  padding: 0 10px; }
+
+.headshot-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 0 0; }
+
+.headshot {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  box-shadow: 0 0 1em #9E9E9E; }
+
+.bio {
+  display: flex;
+  flex-direction: column; }
+  .bio .developer-name {
+    font-size: 34px;
+    margin-top: 30px; }
+  .bio p {
+    font-size: 18px;
+    margin-top: 30px; }
+
+.social-links {
+  margin-top: 30px; }
+  .social-links .fa-linkedin, .social-links .fa-github {
+    padding-right: 16px;
+    color: #7B1FA2; }
+
+.technology {
+  padding-top: 50px;
+  text-align: center;
+  font-family: "Lato", sans-serif; }
+  .technology .lead-text {
+    margin-bottom: 30px;
+    font-size: 34px; }
+
+.react-logo,
+.redux-logo,
+.node-logo,
+.html5-logo,
+.css3-logo,
+.sass-logo,
+.postgresql-logo {
+  padding: 15px 15px;
+  height: 48x;
+  width: 48px; }
