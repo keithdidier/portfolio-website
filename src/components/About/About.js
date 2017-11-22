@@ -8,6 +8,9 @@ import html5Logo from '../../assets/html5.png';
 import css3Logo from '../../assets/css3.png';
 import sassLogo from '../../assets/sass.png';
 import postgresqlLogo from '../../assets/postgresql.png';
+import phpLogo from '../../assets/php.png';
+import laravelLogo from '../../assets/laravel.png';
+import angularLogo from '../../assets/angular.png';
 
 export default class About extends Component {
     render() {
@@ -31,16 +34,19 @@ export default class About extends Component {
                 </section>
                 <section className="technology">
                     <h1 className="lead-text">Tech I'm Proficient In</h1>
-                    <img src={reactLogo} className="react-logo" />
-                    <img src={reduxLogo} className="redux-logo" />
-                    <img src={nodeLogo} className="node-logo" />
-                    <img src={html5Logo} className="html5-logo" />
-                    <img src={css3Logo} className="css3-logo" />
-                    <img src={sassLogo} className="sass-logo" />
-                    <img src={postgresqlLogo} className="postgresql-logo" />                                                                       
+                    <img src={reactLogo} alt="" className="react-logo" />
+                    <img src={reduxLogo} alt="" className="redux-logo" />
+                    <img src={nodeLogo} alt="" className="node-logo" />
+                    <img src={html5Logo} alt="" className="html5-logo" />
+                    <img src={css3Logo} alt="" className="css3-logo" />
+                    <img src={sassLogo} alt="" className="sass-logo" />
+                    <img src={postgresqlLogo} alt="" className="postgresql-logo" />                                                                       
                 </section>
                 <section className="technology">
                     <h1 className="lead-text">Tech I'm Currently Learning</h1>
+                    <img src={phpLogo} alt="" className="php-logo" />
+                    <img src={laravelLogo} alt="" className="laravel-logo" />
+                    <img src={angularLogo} alt="" className="angular-logo" />
                 </section>
             </header>
         )

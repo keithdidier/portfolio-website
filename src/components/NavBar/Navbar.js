@@ -25,7 +25,7 @@ export default class NavBar extends Component {
                 </div>
                 <MuiThemeProvider>
                     <Drawer docked={false}
-                        width={200}
+                        width={250}
                         open={this.state.open}
                         openSecondary={true}
                         onRequestChange={(open) => this.setState({open})}>

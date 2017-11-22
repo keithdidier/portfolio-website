@@ -1,6 +1,9 @@
 @import "main.scss";
 
 .nav {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,9 +14,13 @@
     font-family: $primary-font;
     font-size: 18px;
 
-    .fa-bars, .brand, a {
+    .fa-bars, .brand {
         color: $text-color;
         margin: 0 1em;
+    }
+
+    a {
         text-decoration: none;
+        color: $text-color;        
     }
 }

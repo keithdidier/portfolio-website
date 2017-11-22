@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+.contact-wrapper {
+  padding: 50px 0;
+  color: #9E9E9E;
+  font-family: "Lato", sans-serif; }
+
+.view-title {
+  background-color: #f9fafb;
+  padding: 43px 0;
+  border-bottom: 1px solid #ecf0f1;
+  margin-bottom: 50px 0; }
+  .view-title h1 {
+    margin-left: 10px;
+    font-size: 34px;
+    color: #2c3e50; }
+
+.post-message {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 10px 0 10px; }
+  .post-message input {
+    border: 1px solid #bababa;
+    margin: 8px 0;
+    padding: 12px 0;
+    outline: none;
+    font-size: 12px; }
+
+#write-message {
+  border: 1px solid #bababa;
+  outline: none;
+  font-size: 12px; }
+
+.send-message {
+  padding: 8px 0 0 10px; }
+  .send-message button {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    background-color: #7B1FA2;
+    color: #fff;
+    cursor: pointer;
+    outline: none; }
+  .send-message button:hover {
+    opacity: 0.8;
+    transition: .64s; }

@@ -1,0 +1,60 @@
+@import "main.scss";
+
+.contact-wrapper {
+    padding: 50px 0;
+    color: $text-color;
+    font-family: $primary-font;
+}
+
+.view-title {
+    background-color: #f9fafb;
+    padding: 43px 0;
+    border-bottom: 1px solid #ecf0f1;
+    margin-bottom: 50px 0;    
+    
+    h1 {
+        margin-left: 10px;
+        font-size: 34px;
+        color: $primary-color;
+    }
+}
+
+.post-message {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px 0 10px;
+    // width: 70%;
+    
+    input {
+        border: 1px solid $secondary-color;
+        margin: 8px 0;
+        padding: 12px 0;
+        outline: none;
+        font-size: 12px;    
+    }
+}
+
+#write-message {
+    border: 1px solid $secondary-color;
+    outline: none;
+    font-size: 12px;
+}
+
+.send-message {
+    padding: 8px 0 0 10px;
+
+    button {
+        width: 100px;
+        height: 50px;
+        font-size: 12px;
+        background-color: $theme-color;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+    }
+
+    button:hover {
+        opacity: 0.8;
+        transition: .64s;
+    }
+  }
