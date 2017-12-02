@@ -22,8 +22,8 @@ export default class About extends Component {
                 <section className="bio">
                     <span className="developer-name">Keith Didier</span>
                     <div className="social-links">
-                        <i className="fa fa-linkedin fa-lg" aria-hidden="true"></i>
-                        <i className="fa fa-github fa-lg" aria-hidden="true"></i>
+                        <a href="https://www.linkedin.com/in/keithdidier/" target="_blank"><i className="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+                        <a href="https://github.com/keithdidier" target="_blank"><i className="fa fa-github fa-lg" aria-hidden="true"></i></a>
                     </div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         <br/> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br/>
@@ -33,7 +33,7 @@ export default class About extends Component {
                           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </section>
                 <section className="technology">
-                    <h1 className="lead-text">Tech I'm Proficient In</h1>
+                    <h1 className="lead-text">Tech I'm Experienced In</h1>
                     <img src={reactLogo} alt="" className="react-logo" />
                     <img src={reduxLogo} alt="" className="redux-logo" />
                     <img src={nodeLogo} alt="" className="node-logo" />
