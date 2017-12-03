@@ -25,14 +25,17 @@ export default class Contact extends Component {
 
     render() {
         return(
-            <section className="contact-wrapper">
+            <section id="contact-wrapper">
                 <div className="view-title">
                     <h1>Contact</h1>
                 </div>
                 <section className="contact-para">
                     <p>If you would like to contact me,
                         feel free to send a message in the form to the left.
-                        You are also welcome to contact me through<a href="https://www.linkedin.com/in/keithdidier/" target="_blank">  LinkedIn.</a>   
+                        You are also welcome to contact me through LinkedIn. 
+                        <a href="https://www.linkedin.com/in/keithdidier/" target="_blank">
+                            <i className="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                        </a>   
                     </p>
                 </section>
                 <form className="post-message">

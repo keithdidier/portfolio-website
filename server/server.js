@@ -11,5 +11,5 @@ app.get('*', (req, res)=>{
   res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 
-const PORT = 8082;
+const PORT = 8080;
 app.listen(() => console.log(`Server listening on port: ${PORT}`));

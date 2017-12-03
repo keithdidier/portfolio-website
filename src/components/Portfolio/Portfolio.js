@@ -11,11 +11,13 @@ export default class Portfolio extends Component {
                     <h1>Recent Work</h1>
                 </div>
                 <section className="projects">
-                    <div className="description">
+                <div className="img-container">
                         <a href="http://104.236.218.72:3010/#/" target="_blank">
-                            <h3>rbclone.keithdidier.com</h3>
                             <img src={rbcScreenShot} className="rbc-screen-shot"/>
                         </a>
+                        </div>
+                    <div className="description">
+                        <h3><a href="http://104.236.218.72:3010/#/" target="_blank">Redbubble Clone</a></h3>
                         <p>
                             There are many variations of passages of Lorem Ipsum available,<br/>
                             but the majority have suffered alteration in some form,<br/>

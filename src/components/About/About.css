@@ -1,8 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
-.about-wrapper {
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#about-wrapper {
   font-family: "Lato", sans-serif;
   color: #2c3e50;
-  padding: 100px 10px 0 10px; }
+  padding: 100px 10px 0 10px;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: .64s; }
 
 .headshot-container {
   display: flex;
@@ -51,3 +67,6 @@
   padding: 15px 15px;
   height: 58px;
   width: 58px; }
+
+.tech-by-name {
+  text-align: center; }

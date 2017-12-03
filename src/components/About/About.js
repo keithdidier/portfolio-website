@@ -15,7 +15,7 @@ import angularLogo from '../../assets/angular.png';
 export default class About extends Component {
     render() {
         return(
-            <header className="about-wrapper">
+            <section id="about-wrapper">
                 <div className="headshot-container">
                     <img src={headshot} alt="#" className="headshot" />
                 </div>
@@ -42,13 +42,19 @@ export default class About extends Component {
                     <img src={sassLogo} alt="" className="sass-logo" />
                     <img src={postgresqlLogo} alt="" className="postgresql-logo" />                                                                       
                 </section>
+                <div className="tech-by-name">
+                    <span>React | Redux | Node | HTML5 | CSS3 | Sass | PostgreSQL</span>
+                </div>
                 <section className="technology">
                     <h1 className="lead-text">Tech I'm Currently Learning</h1>
                     <img src={phpLogo} alt="" className="php-logo" />
                     <img src={laravelLogo} alt="" className="laravel-logo" />
                     <img src={angularLogo} alt="" className="angular-logo" />
                 </section>
-            </header>
+                <div className="tech-by-name">
+                    <span>PHP | Laravel | Angular</span>
+                </div>
+            </section>
         )
     }
 }

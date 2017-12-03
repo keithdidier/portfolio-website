@@ -1,7 +1,19 @@
 @import "main.scss";
 
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
 
 #portfolio-wrapper {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: .64s;
     padding-top: 150px;
     font-family: $primary-font;
 
@@ -21,6 +33,12 @@
         margin: 0 auto;
         border: 5px solid #f1f1f1;
 
+        img {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 1em 0 $text-color; 
+        }
+
         .description {
             color: $primary-color;
             font-size: 1em;
@@ -34,17 +52,51 @@
                 color: $theme-color;
             }
 
-            img {
-                width: 100%;
-                height: 100%;
-                box-shadow: 0 0 1em 0 $text-color; 
-            }
-
             p {
                 margin: 15px 30px;
                 font-weight: 700;
                 line-height: 150%;
             }
         }
+    }
+}
+
+@media (min-width: 1024px) {
+    #portfolio-wrapper {
+
+        .projects {
+            width: 100%;
+            height: 50vh;
+            margin: 0;
+
+            .img-container {
+
+                img {
+                    width: 40%;
+                    float: left;
+                    margin: 50px 0 0 25px;
+                    box-shadow: 0 0 1em 0 $text-color; 
+                }
+            }
+
+            .description {
+                float: right;
+                width: 50%;
+                margin: 50px 25px 0 0;
+
+                h3 {
+                    margin: 15px 0 15px 5px;
+                    display: block;
+                    text-align: left;
+                }
+
+                p {
+                    display: block;
+                    margin: 5px;
+                    font-size: 1.1em;
+                    color: $primary-color;
+                }
+            }
+        }    
     }
 }

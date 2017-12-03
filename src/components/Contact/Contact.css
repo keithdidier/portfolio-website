@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
-.contact-wrapper {
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#contact-wrapper {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: .64s;
   padding: 50px 0;
   color: #9E9E9E;
   font-family: "Lato", sans-serif; }
@@ -22,6 +38,9 @@
   padding: 30px 10px 0 10px;
   color: #2c3e50;
   font-weight: 700; }
+  .contact-para .fa-angle-right {
+    margin-left: 8px;
+    color: #2c3e50; }
 
 .post-message {
   display: flex;
@@ -69,15 +88,22 @@
     position: absolute;
     top: 28%;
     left: 60%;
-    width: 30vw;
+    width: 32vw;
     padding: 60px 0;
     background: #f9fafb;
     word-break: break-word;
-    box-shadow: 0 0 1em 0 #9E9E9E;
+    border: 1px solid #ecf0f1;
     font-family: "Lato", sans-serif; }
     .contact-para p {
       font-size: 2em;
       font-weight: 900;
       margin: 0 15px;
-      color: #9E9E9E;
-      line-height: 130%; } }
+      color: #2c3e50;
+      line-height: 130%; }
+      .contact-para p .fa-angle-right {
+        margin-left: 12px;
+        text-decoration: none;
+        color: #2c3e50; }
+        .contact-para p .fa-angle-right:hover {
+          cursor: pointer;
+          color: #7B1FA2; } }
