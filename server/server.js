@@ -2,14 +2,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
+
 app.use( express.static( `${__dirname}/../build` ));
 
-app.use(bodyParser);
+app.use(bodyParser.json());
 
 const path = require('path')
 app.get('*', (req, res)=>{
   res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 
-const PORT = 8080;
-app.listen(() => console.log(`Server listening on port: ${PORT}`));
+const PORT = 3006;
+app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
