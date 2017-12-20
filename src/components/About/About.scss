@@ -12,75 +12,159 @@
 #about-wrapper {
     font-family: $primary-font;
     color: $primary-color;
-    padding: 100px 10px 0 10px;
+    padding: 100px 10px 100px 10px;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
     -webkit-animation-duration: 1s;
     animation-duration: .64s;
+    background-color: #f9fafb;    
 }
 
-.headshot-container {
-    display: flex;
-    justify-content: center;
-}
+.about {
+    height: 100%;
+    margin: 50px auto;
+    padding: 30px 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 1px 0px #ccc;
+    -moz-box-shadow: 0px 0px 1px 0px #ccc;
+    box-shadow: 0px 0px 1px 0px #ccc;
+    border-radius: 1px;
 
-.headshot {
-    height: 250px;
-    width: 250px;
-    border-radius: 100%;
-    box-shadow: 0 0 1em $text-color;
-}
-
-.bio {
-    display: flex;
-    flex-direction: column;
-
-    .developer-name {
-        font-size: 34px;
-        margin-top: 30px;
+    .headshot-container {
+        display: flex;
+        justify-content: center;
     }
-
-    p {
-        font-size: 18px;
-        margin-top: 30px;
+    
+    .headshot {
+        height: 250px;
+        width: 250px;
+        border-radius: 100%;
+        box-shadow: 0 0 1em $text-color;
+    }
+    
+    .bio {
+        display: flex;
+        flex-direction: column;
+    
+        .developer-name {
+            font-size: 34px;
+            margin-top: 30px;
+        }
+    
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    }
+    
+    .social-links {
+        margin-top: 10px;
+    
+        .fa-linkedin, .fa-github {
+            margin-right: 16px;
+            color: $theme-color;
+        }
     }
 }
 
-.social-links {
-    margin-top: 30px;
 
-    .fa-linkedin, .fa-github {
-        padding-right: 16px;
-        color: $theme-color;
-    }
-}
 
 .technology {
     padding-top: 50px;
     text-align: center;
     font-family: $primary-font;
+    height: 100%;
+    margin: 50px auto;
+    padding: 30px 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 1px 0px #ccc;
+    -moz-box-shadow: 0px 0px 1px 0px #ccc;
+    box-shadow: 0px 0px 1px 0px #ccc;
+    border-radius: 1px;
 
     .lead-text {
         margin-bottom: 30px;
         font-size: 34px;
+        text-align: center;
+    }
+    .skills-column {
+        float: left;
+        width: 25%;
+    }
+
+    .skills-grid:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .react-logo,
+    .redux-logo,
+    .node-logo,
+    .html5-logo,
+    .css3-logo,
+    .sass-logo,
+    .postgresql-logo,
+    .php-logo,
+    .laravel-logo,
+    .angular-logo {
+        margin: 1rem 0;
+        height: 58px;
+        width: 58px;
+    }
+    li {
+        display: block;
+        text-decoration: none;
     }
 }
 
-.react-logo,
-.redux-logo,
-.node-logo,
-.html5-logo,
-.css3-logo,
-.sass-logo,
-.postgresql-logo,
-.php-logo,
-.laravel-logo,
-.angular-logo {
-    padding: 15px 15px;
-    height: 58px;
-    width: 58px;
-}
+@media screen and (min-width: 1024px) {
+    #about-wrapper {
+        background-color: #f9fafb;
+        .about {
+            // margin-bottom: 3.5rem;
+            height: 40vh;
+            width: 60%;
+            margin: 0 auto;
+            padding: 60px;
+            background-color: #fff;
+            -webkit-box-shadow: 0px 0px 1px 0px #ccc;
+            -moz-box-shadow: 0px 0px 1px 0px #ccc;
+            box-shadow: 0px 0px 1px 0px #ccc;
+            border-radius: 1px;
+            .headshot-container {
+                display: inline-block;
+                margin-left: 3.5rem;
+            }
+            .bio {
+                // margin: 2em 0 0 0;
+                // margin-top: 2.5em;
+                width: 50%;
+                // margin-right: 3.5rem;
+                float: right;
+                span {
+                    padding-left: 1px;
+                }
+                .social-links {
+                    margin-top: 10px;
+                    padding-left: 1px;
+                }
+                p {
+                    margin-top: 10px;
+                    padding-left: 1px;
+                }
+            }
+        }
 
-.tech-by-name {
-    text-align: center;
+        .technology {
+            height: 40vh;
+            width: 60%;
+            margin: 50px auto;
+            padding: 60px;
+            background-color: #fff;
+            -webkit-box-shadow: 0px 0px 1px 0px #ccc;
+            -moz-box-shadow: 0px 0px 1px 0px #ccc;
+            box-shadow: 0px 0px 1px 0px #ccc;
+            border-radius: 1px;
+        }
+    }
 }

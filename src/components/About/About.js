@@ -16,44 +16,43 @@ export default class About extends Component {
     render() {
         return(
             <section id="about-wrapper">
-                <div className="headshot-container">
-                    <img src={headshot} alt="#" className="headshot" />
-                </div>
-                <section className="bio">
-                    <span className="developer-name">Keith Didier</span>
-                    <div className="social-links">
-                        <a href="https://www.linkedin.com/in/keithdidier/" target="_blank"><i className="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
-                        <a href="https://github.com/keithdidier" target="_blank"><i className="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                <div className="about">
+                    <div className="headshot-container">
+                        <img src={headshot} alt="#" className="headshot" />
                     </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        <br/> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br/>
-                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                         <br/> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                         <br/> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br/>
-                          and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </section>
-                <section className="technology">
-                    <h1 className="lead-text">Tech I'm Experienced In</h1>
-                    <img src={reactLogo} alt="" className="react-logo" />
-                    <img src={reduxLogo} alt="" className="redux-logo" />
-                    <img src={nodeLogo} alt="" className="node-logo" />
-                    <img src={html5Logo} alt="" className="html5-logo" />
-                    <img src={css3Logo} alt="" className="css3-logo" />
-                    <img src={sassLogo} alt="" className="sass-logo" />
-                    <img src={postgresqlLogo} alt="" className="postgresql-logo" />                                                                       
-                </section>
-                <div className="tech-by-name">
-                    <span>React | Redux | Node | HTML5 | CSS3 | Sass | PostgreSQL</span>
+                    <div className="bio">
+                        <span className="developer-name">Keith Didier</span>
+                        <div className="social-links">
+                            <a href="https://www.linkedin.com/in/keithdidier/" target="_blank"><i className="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+                            <a href="https://github.com/keithdidier" target="_blank"><i className="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            <br/> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br/>
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            <br/> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                        </p>
+                    </div>
                 </div>
                 <section className="technology">
-                    <h1 className="lead-text">Tech I'm Currently Learning</h1>
-                    <img src={phpLogo} alt="" className="php-logo" />
-                    <img src={laravelLogo} alt="" className="laravel-logo" />
-                    <img src={angularLogo} alt="" className="angular-logo" />
+                    <h1 className="lead-text">Skills</h1>
+                    <div className="skills-grid">
+                        <div className="skills-column"><img src={reactLogo} alt="" className="react-logo" /><li>ReactJS</li></div>
+                        <div className="skills-column"><img src={reduxLogo} alt="" className="redux-logo" /><li>Redux</li></div>
+                        <div className="skills-column"><img src={nodeLogo} alt="" className="node-logo" /><li>NodeJS</li></div>
+                        <div className="skills-column"><img src={html5Logo} alt="" className="html5-logo" /><li>HTML5</li></div>
+                        <div className="skills-column"><img src={css3Logo} alt="" className="css3-logo" /><li>CSS3</li></div>
+                        <div className="skills-column"><img src={sassLogo} alt="" className="sass-logo" /><li>Sass</li></div>
+                        <div className="skills-column"><img src={postgresqlLogo} alt="" className="postgresql-logo" /><li>PostgreSQL</li></div>
+                    </div>                                                                      
                 </section>
-                <div className="tech-by-name">
-                    <span>PHP | Laravel | Angular</span>
-                </div>
+                <section className="technology">
+                    <h1 className="lead-text">What I'm Currently Learning</h1>
+                    <div className="skills-grid">
+                        <div className="skills-column"><img src={phpLogo} alt="" className="php-logo" /><li>PHP</li></div>
+                        <div className="skills-column"><img src={laravelLogo} alt="" className="laravel-logo" /><li>Laravel</li></div>
+                        <div className="skills-column"><img src={angularLogo} alt="" className="angular-logo" /><li>AngularJS</li></div>
+                    </div>
+                </section>
             </section>
         )
     }
