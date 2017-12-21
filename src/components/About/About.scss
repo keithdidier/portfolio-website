@@ -4,19 +4,15 @@
     0% {opacity: 0;}
     100% {opacity: 1;}
     }
-    @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    }
+    // @keyframes fadeIn {
+    // 0% {opacity: 0;}
+    // 100% {opacity: 1;}
+    // }
 
 #about-wrapper {
     font-family: $primary-font;
     color: $primary-color;
     padding: 100px 10px 100px 10px;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
-    animation-duration: .64s;
     background-color: #f9fafb;    
 }
 
@@ -29,6 +25,10 @@
     -moz-box-shadow: 0px 0px 1px 0px #ccc;
     box-shadow: 0px 0px 1px 0px #ccc;
     border-radius: 1px;
+    // -webkit-animation-name: fadeIn;
+    // animation-name: fadeIn;
+    // -webkit-animation-duration: 1s;
+    // animation-duration: 1s;
 
     .headshot-container {
         display: flex;
@@ -81,6 +81,10 @@
     -moz-box-shadow: 0px 0px 1px 0px #ccc;
     box-shadow: 0px 0px 1px 0px #ccc;
     border-radius: 1px;
+    // -webkit-animation-name: fadeIn;
+    // animation-name: fadeIn;
+    // -webkit-animation-duration: 1s;
+    // animation-duration: 3s;
 
     .lead-text {
         margin-bottom: 30px;
@@ -165,6 +169,21 @@
             -moz-box-shadow: 0px 0px 1px 0px #ccc;
             box-shadow: 0px 0px 1px 0px #ccc;
             border-radius: 1px;
+
+            .react-logo,
+            .redux-logo,
+            .node-logo,
+            .html5-logo,
+            .css3-logo,
+            .sass-logo,
+            .postgresql-logo,
+            .php-logo,
+            .laravel-logo,
+            .angular-logo {
+                margin: 1rem 0;
+                height: 90px;
+                width: 90px;
+            }
         }
     }
 }

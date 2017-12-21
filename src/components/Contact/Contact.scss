@@ -1,19 +1,19 @@
 @import "main.scss";
 
-@-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    }
-    @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    }
+// @-webkit-keyframes fadeIn {
+//     0% {opacity: 0;}
+//     100% {opacity: 1;}
+//     }
+//     @keyframes fadeIn {
+//     0% {opacity: 0;}
+//     100% {opacity: 1;}
+//     }
 
 #contact-wrapper {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
-    animation-duration: .64s;
+    // -webkit-animation-name: fadeIn;
+    // animation-name: fadeIn;
+    // -webkit-animation-duration: 1s;
+    // animation-duration: .64s;
     padding: 50px 0;
     color: $text-color;
     font-family: $primary-font;
@@ -41,10 +41,16 @@
     padding: 30px 10px 0 10px;
     color: $primary-color;
     font-weight: 700;
-
-    .fa-angle-right {
-        margin-left: 8px;
+    p {
+        font-size: 1em;
+        font-weight: 900;
+        margin: 0 15px;
         color: $primary-color;
+        line-height: 130%;  
+        .fa-external-link {
+            margin-left: 5px;
+            color: $primary-color;
+        }
     }
 }
 
@@ -52,15 +58,38 @@
     display: flex;
     flex-direction: column;
     padding: 30px 10px 0 10px;
-    // width: 70%;
-    
-    input {
-        border: 1px solid $secondary-color;
-        margin: 8px 0;
-        padding: 12px 0;
-        outline: none;
-        font-size: 12px;    
-    }
+    color: $theme-color;
+        input {
+            border: 1px solid $secondary-color;
+            margin: 10px 0 30px 0;
+            padding: 12px 0;
+            outline: none;
+            background-color: #f9fafb;
+            border-radius: 4px;    
+        }
+        textarea {
+            margin-top: 8px;
+            background-color: #f9fafb;
+            border-radius: 1px;
+            resize: vertical; 
+        }
+        .send-message {
+            padding: 10px 0 0 0;
+            button {
+                width: 100px;
+                height: 50px;
+                font-size: 12px;
+                background-color: $theme-color;
+                color: #fff;
+                cursor: pointer;
+                outline: none;
+            }
+        
+            button:hover {
+                opacity: 0.8;
+                transition: .64s;
+            }
+        }
 }
 
 #write-message {
@@ -69,73 +98,45 @@
     font-size: 12px;
 }
 
-.send-message {
-    padding: 8px 0 0 10px;
-
-    button {
-        width: 100px;
-        height: 50px;
-        font-size: 12px;
-        background-color: $theme-color;
-        color: #fff;
-        cursor: pointer;
-        outline: none;
-    }
-
-    button:hover {
-        opacity: 0.8;
-        transition: .64s;
-    }
-  }
-
 @media(min-width: 1024px) {
-
-    .view-title {
-        padding-left: 26px;
-    }
-
-    .post-message {
-        display: inline-block;
-        padding-left: 30px; 
-        input{
-           width: 50vw;
+    #contact-wrapper {
+       
+        .view-title {
+            padding-left: 26px;
         }
-        textarea{
-            width: 50vw;
+        .post-message {
+            width: 70%;
+            margin: 0 auto;
+            input{
+            width: 100%;
+            }
+            textarea{
+                width: 100%;
+            }
+            .send-message {
+                padding: 10px 0 0 0;
+            }
         }
-    }
-
-    .send-message {
-        padding-left: 30px;
-    }
-
-    .contact-para {
-        position: absolute;
-        top: 28%;
-        left: 60%;
-        width: 32vw;
-        padding: 60px 0;
-        background: #f9fafb;
-        word-break: break-word;
-        // box-shadow: 0 0 1em 0 $text-color;
-        border: 1px solid #ecf0f1;        
-        font-family: $primary-font;       
-
-        p {
-            font-size: 2em;
-            font-weight: 900;
-            margin: 0 15px;
-            color: $primary-color;
-            line-height: 130%;
-
-            .fa-angle-right {
-                margin-left: 12px;
-                text-decoration: none;
+        .contact-para {
+            width: 50%;
+            margin: 0 auto;
+            word-break: break-word;
+            font-family: $primary-font;       
+            p {
+                font-size: 1em;
+                font-weight: 900;
                 color: $primary-color;
+                line-height: 130%;
 
-                &:hover {
-                    cursor: pointer;
-                    color: $theme-color;
+                .fa-external-link {
+                    margin-left: 5px;
+                    text-decoration: none;
+                    color: $primary-color;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $theme-color;
+                    }
                 }
             }
         }

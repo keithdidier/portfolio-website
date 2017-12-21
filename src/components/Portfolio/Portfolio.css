@@ -12,10 +12,6 @@
     opacity: 1; } }
 
 #portfolio-wrapper {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-  animation-duration: .64s;
   padding-top: 150px;
   font-family: "Lato", sans-serif; }
   #portfolio-wrapper .recent-work {
@@ -30,7 +26,11 @@
     margin: 0 auto;
     padding-bottom: 30px; }
     #portfolio-wrapper .projects .showcase {
-      padding-top: 30px; }
+      padding-top: 30px;
+      -webkit-animation-name: fadeIn;
+      animation-name: fadeIn;
+      -webkit-animation-duration: 1s;
+      animation-duration: 3s; }
       #portfolio-wrapper .projects .showcase .img-container {
         width: 90%;
         margin: 0 auto; }
