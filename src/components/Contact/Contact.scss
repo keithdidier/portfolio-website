@@ -1,19 +1,6 @@
 @import "main.scss";
 
-// @-webkit-keyframes fadeIn {
-//     0% {opacity: 0;}
-//     100% {opacity: 1;}
-//     }
-//     @keyframes fadeIn {
-//     0% {opacity: 0;}
-//     100% {opacity: 1;}
-//     }
-
 #contact-wrapper {
-    // -webkit-animation-name: fadeIn;
-    // animation-name: fadeIn;
-    // -webkit-animation-duration: 1s;
-    // animation-duration: .64s;
     padding: 50px 0;
     color: $text-color;
     font-family: $primary-font;
@@ -76,18 +63,19 @@
         .send-message {
             padding: 10px 0 0 0;
             button {
-                width: 100px;
-                height: 50px;
-                font-size: 12px;
-                background-color: $theme-color;
-                color: #fff;
+                padding: 12px 28px;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                font-size: 16px;
+                font-family: sans-serif;
+                border: 2px solid $theme-color;
+                color: $theme-color;
                 cursor: pointer;
                 outline: none;
             }
-        
             button:hover {
-                opacity: 0.8;
-                transition: .64s;
+                background-color: $theme-color;
+                color: #fff;
             }
         }
 }

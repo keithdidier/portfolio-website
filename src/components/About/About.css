@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
 #about-wrapper {
   font-family: "Lato", sans-serif;
   color: #2c3e50;
@@ -37,6 +31,25 @@
     .about .bio p {
       font-size: 18px;
       margin-top: 10px; }
+    .about .bio .navigation-btn {
+      align-self: center;
+      margin-top: 30px; }
+      .about .bio .navigation-btn button {
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        padding: 12px 28px;
+        background-color: #fff;
+        color: #7B1FA2;
+        border: 2px solid #7B1FA2;
+        font-size: 16px;
+        font-family: sans-serif;
+        width: fit-content;
+        text-align: center;
+        outline: none;
+        cursor: pointer; }
+      .about .bio .navigation-btn button:hover {
+        background-color: #7B1FA2;
+        color: #fff; }
   .about .social-links {
     margin-top: 10px; }
     .about .social-links .fa-linkedin, .about .social-links .fa-github {
@@ -110,6 +123,8 @@
         #about-wrapper .about .bio p {
           margin-top: 10px;
           padding-left: 1px; }
+        #about-wrapper .about .bio .navigation-btn {
+          align-self: left; }
     #about-wrapper .technology {
       height: 40vh;
       width: 60%;

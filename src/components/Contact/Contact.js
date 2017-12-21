@@ -64,22 +64,23 @@ export default class Contact extends Component {
                         </a>   
                     </p>
                 </section>
-                <form className="post-message" onSubmit={this.handleSubmit}>
-                    <span>Your Name</span>
-                    <input type="text" required onChange={this.handleChange}/>
-                    <span>Your Email</span>
-                    <input type="text" required/>
+                <form className="post-message" onSubmit={this.handleSubmit} action="https://formspree.io/keith.b.didier@gmail.com" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" required onChange={this.handleChange}/>
+                    <label for="email">Your Email</label>
+                    <input type="email" name="_replyto" required/>
                     <span>Your Phone Number(optional)</span>
-                    <input type="text"/>
+                    <input type="tel" id="phone-number" name="phone-number"/> 
                     <span>Subject</span>
-                    <input type="text"/>
+                    <input type="text" name="subject"/>
                     <span>Message</span>
                     <textarea 
                     id="write-message" 
-                    rows="8" cols="50" 
+                    rows="8" cols="50"
+                    name="message" 
                     ></textarea>
                     <div className="send-message">
-                        <button onClick={this.isInputGiven} type="submit">Send</button>
+                        <button onClick={this.isInputGiven} type="submit" value="Send">Send</button>
                     </div>
                 </form>
                 <MuiThemeProvider>

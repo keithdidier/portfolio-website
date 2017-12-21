@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import headshot from '../../assets/EDIT-4452 copy 2.JPG';
 import './About.css';
 import reactLogo from '../../assets/react-logo.png';
@@ -31,6 +32,9 @@ export default class About extends Component {
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             <br/> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                         </p>
+                        <div className="navigation-btn">
+                            <Link to="/projects"><button>View my work</button></Link>
+                        </div>
                     </div>
                 </div>
                 <section className="technology">
