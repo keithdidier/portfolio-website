@@ -32,7 +32,7 @@ export default class Contact extends Component {
 
     handleSubmit = (event) => {
         this.handleTouchTap();
-        event.preventDefault();
+        // event.preventDefault();
     };
 
     // handleInput = (input, value) => {
@@ -68,7 +68,7 @@ export default class Contact extends Component {
                     <label for="name">Your Name</label>
                     <input type="text" name="name" required onChange={this.handleChange}/>
                     <label for="email">Your Email</label>
-                    <input type="email" name="_replyto" required/>
+                    <input type="email" name="email" required/>
                     <span>Your Phone Number(optional)</span>
                     <input type="tel" id="phone-number" name="phone-number"/> 
                     <span>Subject</span>

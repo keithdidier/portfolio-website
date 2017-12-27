@@ -27,11 +27,8 @@ export default class About extends Component {
                             <a href="https://www.linkedin.com/in/keithdidier/" target="_blank"><i className="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
                             <a href="https://github.com/keithdidier" target="_blank"><i className="fa fa-github fa-lg" aria-hidden="true"></i></a>
                         </div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            <br/> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br/>
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            <br/> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                        </p>
+                        <p>I'm a web developer with a passion for front-end web development. My focus is on building mobile responsive websites and web apps using primarily React, Node, and SQL. 
+</p>
                         <div className="navigation-btn">
                             <Link to="/projects"><button>View my work</button></Link>
                         </div>
