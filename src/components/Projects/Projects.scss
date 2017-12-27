@@ -18,14 +18,14 @@
 }
 
 #portfolio-wrapper {
-    padding-top: 150px;
+    // margin-top: 150px;
     font-family: $primary-font;
     .recent-work {
         text-align: center;
         h1 {
             font-size: 34px;
             color: $primary-color;
-            margin: 0 0 50px 0;
+            margin: 150px 0 50px 0;
         }
     }
     .projects {

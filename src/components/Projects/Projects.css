@@ -12,14 +12,13 @@
     opacity: 1; } }
 
 #portfolio-wrapper {
-  padding-top: 150px;
   font-family: "Lato", sans-serif; }
   #portfolio-wrapper .recent-work {
     text-align: center; }
     #portfolio-wrapper .recent-work h1 {
       font-size: 34px;
       color: #2c3e50;
-      margin: 0 0 50px 0; }
+      margin: 150px 0 50px 0; }
   #portfolio-wrapper .projects {
     background: #f9fafb;
     width: 100%;
