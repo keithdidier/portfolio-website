@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
 .nav {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
