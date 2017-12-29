@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
 #contact-wrapper {
-  padding: 50px 0;
   color: #9E9E9E;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  margin: 5px 0 50px 0; }
 
 .view-title {
   background-color: #f9fafb;
   padding: 43px 0;
   border-bottom: 1px solid #ecf0f1;
-  margin-bottom: 50px 0; }
+  margin-bottom: 50px; }
   .view-title h1 {
     margin-left: 10px;
     font-size: 34px;
@@ -59,6 +59,7 @@
       font-family: sans-serif;
       border: 2px solid #7B1FA2;
       color: #7B1FA2;
+      background-color: #fff;
       cursor: pointer;
       outline: none; }
     .post-message .send-message button:hover {
@@ -71,31 +72,34 @@
   font-size: 12px; }
 
 @media (min-width: 1024px) {
-  #contact-wrapper .view-title {
-    padding-left: 26px; }
-  #contact-wrapper .post-message {
-    width: 70%;
-    margin: 0 auto; }
-    #contact-wrapper .post-message input {
-      width: 100%; }
-    #contact-wrapper .post-message textarea {
-      width: 100%; }
-    #contact-wrapper .post-message .send-message {
-      padding: 10px 0 0 0; }
-  #contact-wrapper .contact-para {
-    width: 50%;
-    margin: 0 auto;
-    word-break: break-word;
-    font-family: "Lato", sans-serif; }
-    #contact-wrapper .contact-para p {
-      font-size: 1em;
-      font-weight: 900;
-      color: #2c3e50;
-      line-height: 130%; }
-      #contact-wrapper .contact-para p .fa-external-link {
-        margin-left: 5px;
-        text-decoration: none;
-        color: #2c3e50; }
-        #contact-wrapper .contact-para p .fa-external-link:hover {
-          cursor: pointer;
-          color: #7B1FA2; } }
+  #contact-wrapper {
+    margin-top: 3px; }
+    #contact-wrapper .view-title h1 {
+      margin-top: 50px;
+      padding-left: 14%; }
+    #contact-wrapper .post-message {
+      width: 70%;
+      margin: 0 auto; }
+      #contact-wrapper .post-message input {
+        width: 100%; }
+      #contact-wrapper .post-message textarea {
+        width: 100%; }
+      #contact-wrapper .post-message .send-message {
+        padding: 10px 0 0 0; }
+    #contact-wrapper .contact-para {
+      width: 50%;
+      margin: 0 auto;
+      word-break: break-word;
+      font-family: "Lato", sans-serif; }
+      #contact-wrapper .contact-para p {
+        font-size: 1em;
+        font-weight: 900;
+        color: #2c3e50;
+        line-height: 130%; }
+        #contact-wrapper .contact-para p .fa-external-link {
+          margin-left: 5px;
+          text-decoration: none;
+          color: #2c3e50; }
+          #contact-wrapper .contact-para p .fa-external-link:hover {
+            cursor: pointer;
+            color: #7B1FA2; } }

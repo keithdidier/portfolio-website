@@ -1,102 +1,100 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
-#about-wrapper {
-  font-family: "Lato", sans-serif;
-  color: #2c3e50;
-  padding: 100px 10px 100px 10px;
-  background-color: #f9fafb; }
-
-.about {
-  height: 100%;
-  margin: 50px auto;
-  padding: 30px 10px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 0px 1px 0px #ccc;
-  -moz-box-shadow: 0px 0px 1px 0px #ccc;
-  box-shadow: 0px 0px 1px 0px #ccc;
-  border-radius: 1px; }
-  .about .headshot-container {
-    display: flex;
-    justify-content: center; }
-  .about .headshot {
-    height: 250px;
-    width: 250px;
-    border-radius: 100%;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); }
-  .about .bio {
-    display: flex;
-    flex-direction: column; }
-    .about .bio .developer-name {
-      font-size: 34px;
-      margin-top: 30px; }
-    .about .bio p {
-      font-size: 18px;
+#about-content-area {
+  background-color: #f9fafb;
+  margin-top: 5px; }
+  #about-content-area #about-wrapper {
+    font-family: "Lato", sans-serif;
+    color: #2c3e50;
+    padding: 100px 10px 100px 10px; }
+  #about-content-area .about {
+    height: 100%;
+    margin: 50px auto;
+    padding: 30px 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 5px 0px #ccc;
+    -moz-box-shadow: 0px 0px 5px 0px #ccc;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    border-radius: 1px; }
+    #about-content-area .about .headshot-container {
+      display: flex;
+      justify-content: center; }
+    #about-content-area .about .headshot {
+      height: 250px;
+      width: 250px;
+      border-radius: 100%;
+      box-shadow: 0 0 1em #9E9E9E; }
+    #about-content-area .about .bio {
+      display: flex;
+      flex-direction: column; }
+      #about-content-area .about .bio .developer-name {
+        font-size: 34px;
+        margin-top: 30px; }
+      #about-content-area .about .bio p {
+        font-size: 18px;
+        margin-top: 10px; }
+      #about-content-area .about .bio .navigation-btn {
+        align-self: center;
+        margin-top: 30px; }
+        #about-content-area .about .bio .navigation-btn button {
+          -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+          padding: 12px 28px;
+          background-color: #fff;
+          color: #7B1FA2;
+          border: 2px solid #7B1FA2;
+          font-size: 16px;
+          font-family: sans-serif;
+          width: fit-content;
+          text-align: center;
+          outline: none;
+          cursor: pointer; }
+        #about-content-area .about .bio .navigation-btn button:hover {
+          background-color: #7B1FA2;
+          color: #fff; }
+    #about-content-area .about .social-links {
       margin-top: 10px; }
-    .about .bio .navigation-btn {
-      align-self: center;
-      margin-top: 30px; }
-      .about .bio .navigation-btn button {
-        -webkit-transition-duration: 0.4s;
-        transition-duration: 0.4s;
-        padding: 12px 28px;
-        background-color: #fff;
-        color: #7B1FA2;
-        border: 2px solid #7B1FA2;
-        font-size: 16px;
-        font-family: sans-serif;
-        width: fit-content;
-        text-align: center;
-        outline: none;
-        cursor: pointer; }
-      .about .bio .navigation-btn button:hover {
-        background-color: #7B1FA2;
-        color: #fff; }
-  .about .social-links {
-    margin-top: 10px; }
-    .about .social-links .fa-linkedin, .about .social-links .fa-github {
-      margin-right: 16px;
-      color: #7B1FA2; }
-
-.technology {
-  padding-top: 50px;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  height: 100%;
-  margin: 50px auto;
-  padding: 30px 10px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 0px 1px 0px #ccc;
-  -moz-box-shadow: 0px 0px 1px 0px #ccc;
-  box-shadow: 0px 0px 1px 0px #ccc;
-  border-radius: 1px; }
-  .technology .lead-text {
-    margin-bottom: 30px;
-    font-size: 34px;
-    text-align: center; }
-  .technology .skills-column {
-    float: left;
-    width: 25%; }
-  .technology .skills-grid:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .technology .react-logo,
-  .technology .redux-logo,
-  .technology .node-logo,
-  .technology .html5-logo,
-  .technology .css3-logo,
-  .technology .sass-logo,
-  .technology .postgresql-logo,
-  .technology .php-logo,
-  .technology .laravel-logo,
-  .technology .angular-logo {
-    margin: 1rem 0;
-    height: 58px;
-    width: 58px; }
-  .technology li {
-    display: block;
-    text-decoration: none; }
+      #about-content-area .about .social-links .fa-linkedin, #about-content-area .about .social-links .fa-github {
+        margin-right: 16px;
+        color: #7B1FA2; }
+  #about-content-area .technology {
+    padding-top: 50px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    height: 100%;
+    margin: 50px auto;
+    padding: 30px 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 1px 0px #ccc;
+    -moz-box-shadow: 0px 0px 1px 0px #ccc;
+    box-shadow: 0px 0px 1px 0px #ccc;
+    border-radius: 1px; }
+    #about-content-area .technology .lead-text {
+      margin-bottom: 30px;
+      font-size: 34px;
+      text-align: center; }
+    #about-content-area .technology .skills-column {
+      float: left;
+      width: 25%; }
+    #about-content-area .technology .skills-grid:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #about-content-area .technology .react-logo,
+    #about-content-area .technology .redux-logo,
+    #about-content-area .technology .node-logo,
+    #about-content-area .technology .html5-logo,
+    #about-content-area .technology .css3-logo,
+    #about-content-area .technology .sass-logo,
+    #about-content-area .technology .postgresql-logo,
+    #about-content-area .technology .php-logo,
+    #about-content-area .technology .laravel-logo,
+    #about-content-area .technology .angular-logo {
+      margin: 1rem 0;
+      height: 58px;
+      width: 58px; }
+    #about-content-area .technology li {
+      display: block;
+      text-decoration: none; }
 
 @media screen and (min-width: 1024px) {
   #about-wrapper {

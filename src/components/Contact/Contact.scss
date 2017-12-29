@@ -1,16 +1,16 @@
 @import "main.scss";
 
 #contact-wrapper {
-    padding: 50px 0;
     color: $text-color;
     font-family: $primary-font;
+    margin: 5px 0 50px 0;
 }
 
 .view-title {
     background-color: #f9fafb;
     padding: 43px 0;
     border-bottom: 1px solid #ecf0f1;
-    margin-bottom: 50px 0;    
+    margin-bottom: 50px;    
     
     h1 {
         margin-left: 10px;
@@ -70,6 +70,7 @@
                 font-family: sans-serif;
                 border: 2px solid $theme-color;
                 color: $theme-color;
+                background-color: #fff;                
                 cursor: pointer;
                 outline: none;
             }
@@ -88,9 +89,14 @@
 
 @media(min-width: 1024px) {
     #contact-wrapper {
+        margin-top: 3px;
        
         .view-title {
-            padding-left: 26px;
+            
+            h1 {
+                margin-top: 50px;
+                padding-left: 14%; 
+            }
         }
         .post-message {
             width: 70%;
