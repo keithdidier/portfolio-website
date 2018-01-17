@@ -31,20 +31,20 @@ export default class NavBar extends Component {
                             open={this.state.open}
                             openSecondary={true}
                             onRequestChange={(open) => this.setState({open})}>
-                            <MenuItem onClick={this.handleClose}><span><Link to="/projects">Projects</Link></span></MenuItem>
                             <MenuItem onClick={this.handleClose}><span><Link to="/">About</Link></span></MenuItem>
+                            <MenuItem onClick={this.handleClose}><span><Link to="/projects">Projects</Link></span></MenuItem>
                             <MenuItem onClick={this.handleClose}><span><Link to="/contact">Contact</Link></span></MenuItem>
-                            <MenuItem onClick={this.handleClose}><span><Link to="/blog">Resources</Link></span></MenuItem>
+                            {/* <MenuItem onClick={this.handleClose}><span><Link to="/esources">Resources</Link></span></MenuItem> */}
                         </Drawer>
                     </MuiThemeProvider>
                     <i className="fa fa-bars" aria-hidden="true" onClick={this.handleToggle}></i>
                 </MediaQuery>
                 <MediaQuery query="(min-width: 1024px)">
                 <div className="nav-links">
-                    <span><Link to="/projects">Projects</Link></span>
                     <span><Link to="/">About</Link></span>
+                    <span><Link to="/projects">Projects</Link></span>
                     <span><Link to="/contact">Contact</Link></span>
-                    <span><Link to="/blog">Resources</Link></span>
+                    {/* <span><Link to="/resources">Resources</Link></span> */}
                 </div>
                 </MediaQuery>
             </header>

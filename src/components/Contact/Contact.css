@@ -5,7 +5,7 @@
   margin: 5px 0 50px 0; }
 
 .view-title {
-  background-color: #f9fafb;
+  background-color: #f7f8fa;
   padding: 43px 0;
   border-bottom: 1px solid #ecf0f1;
   margin-bottom: 50px; }
@@ -46,7 +46,7 @@
     border-radius: 4px; }
   .post-message textarea {
     margin-top: 8px;
-    background-color: #f9fafb;
+    background-color: #f7f8fa;
     border-radius: 4px;
     resize: vertical; }
   .post-message .send-message {

@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
 #about-content-area {
-  background-color: #f9fafb;
+  background-color: #f7f8fa;
   margin-top: 5px; }
   #about-content-area #about-wrapper {
     font-family: "Lato", sans-serif;
     color: #2c3e50;
-    padding: 100px 10px 100px 10px; }
+    padding: 30px 10px 30px 10px; }
   #about-content-area .about {
     height: 100%;
     margin: 50px auto;
     padding: 30px 10px;
     background-color: #fff;
-    -webkit-box-shadow: 0px 0px 5px 0px #ccc;
-    -moz-box-shadow: 0px 0px 5px 0px #ccc;
-    box-shadow: 0px 0px 5px 0px #ccc;
+    -webkit-box-shadow: 0px 1px 5px 0px #ccc;
+    -moz-box-shadow: 0px 1px 5px 0px #ccc;
+    box-shadow: 0px 1px 5px 0px #ccc;
     border-radius: 1px; }
     #about-content-area .about .headshot-container {
       display: flex;
@@ -64,9 +64,9 @@
     margin: 50px auto;
     padding: 30px 10px;
     background-color: #fff;
-    -webkit-box-shadow: 0px 0px 1px 0px #ccc;
-    -moz-box-shadow: 0px 0px 1px 0px #ccc;
-    box-shadow: 0px 0px 1px 0px #ccc;
+    -webkit-box-shadow: 0px 1px 1px 0px #ccc;
+    -moz-box-shadow: 0px 1px 1px 0px #ccc;
+    box-shadow: 0px 1px 1px 0px #ccc;
     border-radius: 1px; }
     #about-content-area .technology .lead-text {
       margin-bottom: 30px;
@@ -86,9 +86,11 @@
     #about-content-area .technology .css3-logo,
     #about-content-area .technology .sass-logo,
     #about-content-area .technology .postgresql-logo,
+    #about-content-area .technology .javascript-logo,
     #about-content-area .technology .php-logo,
     #about-content-area .technology .laravel-logo,
-    #about-content-area .technology .angular-logo {
+    #about-content-area .technology .angular-logo,
+    #about-content-area .technology .mysql-logo {
       margin: 1rem 0;
       height: 58px;
       width: 58px; }
@@ -97,9 +99,10 @@
       text-decoration: none; }
 
 @media screen and (min-width: 1024px) {
-  #about-wrapper {
-    background-color: #f9fafb; }
-    #about-wrapper .about {
+  #about-content-area #about-wrapper {
+    background-color: #f7f8fa;
+    padding: 100px 10px 100px 10px; }
+    #about-content-area #about-wrapper .about {
       height: 40vh;
       width: 60%;
       margin: 0 auto;
@@ -107,25 +110,25 @@
       background-color: #fff;
       -webkit-box-shadow: 0px 0px 1px 0px #ccc;
       -moz-box-shadow: 0px 0px 1px 0px #ccc;
-      box-shadow: 0px 0px 1px 0px #ccc;
+      box-shadow: 0px 1px 1px 0px #ccc;
       border-radius: 1px; }
-      #about-wrapper .about .headshot-container {
+      #about-content-area #about-wrapper .about .headshot-container {
         display: inline-block;
         margin-left: 3.5rem; }
-      #about-wrapper .about .bio {
+      #about-content-area #about-wrapper .about .bio {
         width: 50%;
         float: right; }
-        #about-wrapper .about .bio span {
+        #about-content-area #about-wrapper .about .bio span {
           padding-left: 1px; }
-        #about-wrapper .about .bio .social-links {
+        #about-content-area #about-wrapper .about .bio .social-links {
           margin-top: 10px;
           padding-left: 1px; }
-        #about-wrapper .about .bio p {
+        #about-content-area #about-wrapper .about .bio p {
           margin-top: 10px;
           padding-left: 1px; }
-        #about-wrapper .about .bio .navigation-btn {
+        #about-content-area #about-wrapper .about .bio .navigation-btn {
           align-self: left; }
-    #about-wrapper .technology {
+    #about-content-area #about-wrapper .technology {
       height: 40vh;
       width: 60%;
       margin: 50px auto;
@@ -133,18 +136,20 @@
       background-color: #fff;
       -webkit-box-shadow: 0px 0px 1px 0px #ccc;
       -moz-box-shadow: 0px 0px 1px 0px #ccc;
-      box-shadow: 0px 0px 1px 0px #ccc;
+      box-shadow: 0px 1px 1px 0px #ccc;
       border-radius: 1px; }
-      #about-wrapper .technology .react-logo,
-      #about-wrapper .technology .redux-logo,
-      #about-wrapper .technology .node-logo,
-      #about-wrapper .technology .html5-logo,
-      #about-wrapper .technology .css3-logo,
-      #about-wrapper .technology .sass-logo,
-      #about-wrapper .technology .postgresql-logo,
-      #about-wrapper .technology .php-logo,
-      #about-wrapper .technology .laravel-logo,
-      #about-wrapper .technology .angular-logo {
+      #about-content-area #about-wrapper .technology .react-logo,
+      #about-content-area #about-wrapper .technology .redux-logo,
+      #about-content-area #about-wrapper .technology .node-logo,
+      #about-content-area #about-wrapper .technology .html5-logo,
+      #about-content-area #about-wrapper .technology .css3-logo,
+      #about-content-area #about-wrapper .technology .sass-logo,
+      #about-content-area #about-wrapper .technology .postgresql-logo,
+      #about-content-area #about-wrapper .technology .javascript-logo,
+      #about-content-area #about-wrapper .technology .php-logo,
+      #about-content-area #about-wrapper .technology .laravel-logo,
+      #about-content-area #about-wrapper .technology .angular-logo,
+      #about-content-area #about-wrapper .technology .mysql-logo {
         margin: 1rem 0;
-        height: 90px;
-        width: 90px; } }
+        height: 60px;
+        width: 60px; } }
