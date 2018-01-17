@@ -1,16 +1,16 @@
 @import "main.scss";
 
-.contact-wrapper {
-    padding: 50px 0;
+#contact-wrapper {
     color: $text-color;
     font-family: $primary-font;
+    margin: 5px 0 50px 0;
 }
 
 .view-title {
-    background-color: #f9fafb;
+    background-color: $tertiary-color;
     padding: 43px 0;
     border-bottom: 1px solid #ecf0f1;
-    margin-bottom: 50px 0;    
+    margin-bottom: 50px;    
     
     h1 {
         margin-left: 10px;
@@ -19,19 +19,66 @@
     }
 }
 
+
+.contact-para {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    word-break: wrap;
+    padding: 30px 10px 0 10px;
+    color: $primary-color;
+    font-weight: 700;
+    p {
+        font-size: 1em;
+        font-weight: 900;
+        margin: 0 15px;
+        color: $primary-color;
+        line-height: 130%;  
+        .fa-external-link {
+            margin-left: 5px;
+            color: $primary-color;
+        }
+    }
+}
+
 .post-message {
     display: flex;
     flex-direction: column;
-    padding: 50px 10px 0 10px;
-    // width: 70%;
-    
-    input {
-        border: 1px solid $secondary-color;
-        margin: 8px 0;
-        padding: 12px 0;
-        outline: none;
-        font-size: 12px;    
-    }
+    padding: 30px 10px 0 10px;
+    color: $theme-color;
+        input {
+            border: 1px solid $secondary-color;
+            margin: 10px 0 30px 0;
+            padding: 12px 0;
+            outline: none;
+            background-color: #f9fafb;
+            border-radius: 4px;    
+        }
+        textarea {
+            margin-top: 8px;
+            background-color: $tertiary-color; 
+            border-radius: 4px;
+            resize: vertical; 
+        }
+        .send-message {
+            padding: 10px 0 0 0;
+            button {
+                padding: 12px 28px;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                font-size: 16px;
+                font-family: sans-serif;
+                border: 2px solid $theme-color;
+                color: $theme-color;
+                background-color: #fff;                
+                cursor: pointer;
+                outline: none;
+            }
+            button:hover {
+                background-color: $theme-color;
+                color: #fff;
+            }
+        }
 }
 
 #write-message {
@@ -40,21 +87,52 @@
     font-size: 12px;
 }
 
-.send-message {
-    padding: 8px 0 0 10px;
+@media(min-width: 1024px) {
+    #contact-wrapper {
+        margin-top: 3px;
+       
+        .view-title {
+            
+            h1 {
+                margin-top: 50px;
+                padding-left: 14%; 
+            }
+        }
+        .post-message {
+            width: 70%;
+            margin: 0 auto;
+            input{
+            width: 100%;
+            }
+            textarea{
+                width: 100%;
+            }
+            .send-message {
+                padding: 10px 0 0 0;
+            }
+        }
+        .contact-para {
+            width: 50%;
+            margin: 0 auto;
+            word-break: break-word;
+            font-family: $primary-font;       
+            p {
+                font-size: 1em;
+                font-weight: 900;
+                color: $primary-color;
+                line-height: 130%;
 
-    button {
-        width: 100px;
-        height: 50px;
-        font-size: 12px;
-        background-color: $theme-color;
-        color: #fff;
-        cursor: pointer;
-        outline: none;
-    }
+                .fa-external-link {
+                    margin-left: 5px;
+                    text-decoration: none;
+                    color: $primary-color;
 
-    button:hover {
-        opacity: 0.8;
-        transition: .64s;
+                    &:hover {
+                        cursor: pointer;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
     }
-  }
+}

@@ -1,45 +1,105 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
-.contact-wrapper {
-  padding: 50px 0;
+#contact-wrapper {
   color: #9E9E9E;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  margin: 5px 0 50px 0; }
 
 .view-title {
-  background-color: #f9fafb;
+  background-color: #f7f8fa;
   padding: 43px 0;
   border-bottom: 1px solid #ecf0f1;
-  margin-bottom: 50px 0; }
+  margin-bottom: 50px; }
   .view-title h1 {
     margin-left: 10px;
     font-size: 34px;
     color: #2c3e50; }
 
+.contact-para {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  word-break: wrap;
+  padding: 30px 10px 0 10px;
+  color: #2c3e50;
+  font-weight: 700; }
+  .contact-para p {
+    font-size: 1em;
+    font-weight: 900;
+    margin: 0 15px;
+    color: #2c3e50;
+    line-height: 130%; }
+    .contact-para p .fa-external-link {
+      margin-left: 5px;
+      color: #2c3e50; }
+
 .post-message {
   display: flex;
   flex-direction: column;
-  padding: 50px 10px 0 10px; }
+  padding: 30px 10px 0 10px;
+  color: #7B1FA2; }
   .post-message input {
     border: 1px solid #bababa;
-    margin: 8px 0;
+    margin: 10px 0 30px 0;
     padding: 12px 0;
     outline: none;
-    font-size: 12px; }
+    background-color: #f9fafb;
+    border-radius: 4px; }
+  .post-message textarea {
+    margin-top: 8px;
+    background-color: #f7f8fa;
+    border-radius: 4px;
+    resize: vertical; }
+  .post-message .send-message {
+    padding: 10px 0 0 0; }
+    .post-message .send-message button {
+      padding: 12px 28px;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      font-size: 16px;
+      font-family: sans-serif;
+      border: 2px solid #7B1FA2;
+      color: #7B1FA2;
+      background-color: #fff;
+      cursor: pointer;
+      outline: none; }
+    .post-message .send-message button:hover {
+      background-color: #7B1FA2;
+      color: #fff; }
 
 #write-message {
   border: 1px solid #bababa;
   outline: none;
   font-size: 12px; }
 
-.send-message {
-  padding: 8px 0 0 10px; }
-  .send-message button {
-    width: 100px;
-    height: 50px;
-    font-size: 12px;
-    background-color: #7B1FA2;
-    color: #fff;
-    cursor: pointer;
-    outline: none; }
-  .send-message button:hover {
-    opacity: 0.8;
-    transition: .64s; }
+@media (min-width: 1024px) {
+  #contact-wrapper {
+    margin-top: 3px; }
+    #contact-wrapper .view-title h1 {
+      margin-top: 50px;
+      padding-left: 14%; }
+    #contact-wrapper .post-message {
+      width: 70%;
+      margin: 0 auto; }
+      #contact-wrapper .post-message input {
+        width: 100%; }
+      #contact-wrapper .post-message textarea {
+        width: 100%; }
+      #contact-wrapper .post-message .send-message {
+        padding: 10px 0 0 0; }
+    #contact-wrapper .contact-para {
+      width: 50%;
+      margin: 0 auto;
+      word-break: break-word;
+      font-family: "Lato", sans-serif; }
+      #contact-wrapper .contact-para p {
+        font-size: 1em;
+        font-weight: 900;
+        color: #2c3e50;
+        line-height: 130%; }
+        #contact-wrapper .contact-para p .fa-external-link {
+          margin-left: 5px;
+          text-decoration: none;
+          color: #2c3e50; }
+          #contact-wrapper .contact-para p .fa-external-link:hover {
+            cursor: pointer;
+            color: #7B1FA2; } }

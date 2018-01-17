@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import './NavBar.css';
 import 'font-awesome/css/font-awesome.min.css';
 import {MuiThemeProvider, Drawer, MenuItem} from 'material-ui';
+import MediaQuery from 'react-responsive';
 
 export default class NavBar extends Component {
     constructor(props) {
@@ -23,19 +24,29 @@ export default class NavBar extends Component {
                 <div className="brand">
                     <span><Link to="/">Keith Didier</Link></span>
                 </div>
-                <MuiThemeProvider>
-                    <Drawer docked={false}
-                        width={250}
-                        open={this.state.open}
-                        openSecondary={true}
-                        onRequestChange={(open) => this.setState({open})}>
-                        <MenuItem><span><Link to="/">Portfolio</Link></span></MenuItem>
-                        <MenuItem><span><Link to="/about">About</Link></span></MenuItem>
-                        <MenuItem><span><Link to="/contact">Contact</Link></span></MenuItem>
-                        <MenuItem><span><Link to="/blog">Blog</Link></span></MenuItem>
-                    </Drawer>
-                </MuiThemeProvider>
-                <i className="fa fa-bars" aria-hidden="true" onClick={this.handleToggle}></i>
+                <MediaQuery query="(max-width: 1024px)">
+                    <MuiThemeProvider>
+                        <Drawer docked={false}
+                            width={250}
+                            open={this.state.open}
+                            openSecondary={true}
+                            onRequestChange={(open) => this.setState({open})}>
+                            <MenuItem onClick={this.handleClose}><span><Link to="/">About</Link></span></MenuItem>
+                            <MenuItem onClick={this.handleClose}><span><Link to="/projects">Projects</Link></span></MenuItem>
+                            <MenuItem onClick={this.handleClose}><span><Link to="/contact">Contact</Link></span></MenuItem>
+                            {/* <MenuItem onClick={this.handleClose}><span><Link to="/esources">Resources</Link></span></MenuItem> */}
+                        </Drawer>
+                    </MuiThemeProvider>
+                    <i className="fa fa-bars" aria-hidden="true" onClick={this.handleToggle}></i>
+                </MediaQuery>
+                <MediaQuery query="(min-width: 1024px)">
+                <div className="nav-links">
+                    <span><Link to="/">About</Link></span>
+                    <span><Link to="/projects">Projects</Link></span>
+                    <span><Link to="/contact">Contact</Link></span>
+                    {/* <span><Link to="/resources">Resources</Link></span> */}
+                </div>
+                </MediaQuery>
             </header>
         )
     }
