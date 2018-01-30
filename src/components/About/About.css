@@ -31,6 +31,7 @@
         margin-top: 30px; }
       #about-content-area .about .bio p {
         font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
         margin-top: 10px; }
       #about-content-area .about .bio .navigation-btn {
         align-self: center;
@@ -103,7 +104,7 @@
     background-color: #f7f8fa;
     padding: 100px 10px 100px 10px; }
     #about-content-area #about-wrapper .about {
-      height: 40vh;
+      height: 100%;
       width: 60%;
       margin: 0 auto;
       padding: 60px;
@@ -116,7 +117,7 @@
         display: inline-block;
         margin-left: 3.5rem; }
       #about-content-area #about-wrapper .about .bio {
-        width: 50%;
+        max-width: 500px;
         float: right; }
         #about-content-area #about-wrapper .about .bio span {
           padding-left: 1px; }
@@ -129,7 +130,7 @@
         #about-content-area #about-wrapper .about .bio .navigation-btn {
           align-self: left; }
     #about-content-area #about-wrapper .technology {
-      height: 40vh;
+      height: 100%;
       width: 60%;
       margin: 50px auto;
       padding: 60px;
@@ -151,5 +152,6 @@
       #about-content-area #about-wrapper .technology .angular-logo,
       #about-content-area #about-wrapper .technology .mysql-logo {
         margin: 1rem 0;
-        height: 60px;
-        width: 60px; } }
+        position: relative;
+        height: 130px;
+        width: 130px; } }

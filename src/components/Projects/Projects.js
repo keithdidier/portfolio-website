@@ -39,7 +39,7 @@ RESTful APIs were used to create, read, update, and delete data in the database.
                                 <div className="tech-used"><img src={postgresqlLogo} alt="" className="postgresql-logo" /></div>
                             </div>
                             <div className="navigation-btn">
-                                <a href="http://rbclone.keithdidier.com/#/" target="_blank"><button>Visit website</button></a>
+                                <a href="http://rbclone.keithdidier.com/#/" target="_blank"><button>Visit Website</button></a>
                             </div>
                         </div>
                     </div>
