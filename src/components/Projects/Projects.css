@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -79,7 +80,8 @@
             color: #7B1FA2;
             border: 2px solid #7B1FA2;
             font-size: 16px;
-            font-family: sans-serif;
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
             width: fit-content;
             text-align: center;
             outline: none;
@@ -132,8 +134,5 @@
         #portfolio-wrapper .projects .showcase .description .navigation-btn {
           float: left; }
         #portfolio-wrapper .projects .showcase .description button:hover {
-          background-color: #7B1FA2;
-          color: #fff; }
-        #portfolio-wrapper .projects .showcase .description button:focus {
           background-color: #7B1FA2;
           color: #fff; } }
