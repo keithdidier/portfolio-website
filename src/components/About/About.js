@@ -30,7 +30,7 @@ export default class About extends Component {
                                 <a href="https://www.linkedin.com/in/keithdidier/" target="_blank"><i className="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
                                 <a href="https://github.com/keithdidier" target="_blank"><i className="fa fa-github fa-lg" aria-hidden="true"></i></a>
                             </div>
-                            <p>I'm a full stack web developer with a passion for frontend development. My focus is on building mobile responsive websites and web apps using technologies such as React, Node.js, PHP, and SQL. I keep my skills sharp by coding daily and learning top-notch frameworks and libraries.
+                            <p>I'm a full stack web developer with a passion for front-end development. My focus is on building mobile responsive websites and web apps using technologies such as React, Node.js, PHP, and SQL. I keep my skills sharp by coding daily and learning top-notch frameworks and libraries.
     </p>
                             <div className="navigation-btn">
                                 <Link to="/projects"><button>View My Work</button></Link>

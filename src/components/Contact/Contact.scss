@@ -67,7 +67,8 @@
                 -webkit-transition-duration: 0.4s;
                 transition-duration: 0.4s;
                 font-size: 16px;
-                font-family: sans-serif;
+                font-family: $secondary-font;
+                font-weight: bold;
                 border: 2px solid $theme-color;
                 color: $theme-color;
                 background-color: #fff;                
