@@ -59,7 +59,8 @@
           color: #fff; }
     #about-content-area .about .social-links {
       margin-top: 10px; }
-      #about-content-area .about .social-links .fa-linkedin, #about-content-area .about .social-links .fa-github {
+      #about-content-area .about .social-links .fa-linkedin,
+      #about-content-area .about .social-links .fa-github {
         margin-right: 16px;
         color: #7B1FA2; }
   #about-content-area .technology {
@@ -78,13 +79,9 @@
       margin-bottom: 30px;
       font-size: 34px;
       text-align: center; }
-    #about-content-area .technology .skills-column {
-      float: left;
-      width: 25%; }
-    #about-content-area .technology .skills-grid:after {
-      content: "";
-      display: table;
-      clear: both; }
+    #about-content-area .technology .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); }
     #about-content-area .technology .react-logo,
     #about-content-area .technology .redux-logo,
     #about-content-area .technology .node-logo,
@@ -96,7 +93,10 @@
     #about-content-area .technology .php-logo,
     #about-content-area .technology .laravel-logo,
     #about-content-area .technology .angular-logo,
-    #about-content-area .technology .mysql-logo {
+    #about-content-area .technology .mysql-logo,
+    #about-content-area .technology .bootstrap-logo,
+    #about-content-area .technology .mongodb-logo,
+    #about-content-area .technology .firebase-logo {
       margin: 1rem 0;
       height: 58px;
       width: 58px; }
@@ -110,7 +110,7 @@
     padding: 100px 10px 100px 10px; }
     #about-content-area #about-wrapper .about {
       height: 100%;
-      width: 80%;
+      max-width: 750px;
       margin: 0 auto;
       padding: 60px;
       display: flex;
@@ -139,7 +139,7 @@
           align-self: left; }
     #about-content-area #about-wrapper .technology {
       height: 100%;
-      width: 80%;
+      max-width: 750px;
       margin: 50px auto;
       padding: 60px;
       background-color: #fff;

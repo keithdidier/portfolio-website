@@ -65,7 +65,10 @@
           #portfolio-wrapper .projects .showcase .description .project-tech .postgresql-logo,
           #portfolio-wrapper .projects .showcase .description .project-tech .php-logo,
           #portfolio-wrapper .projects .showcase .description .project-tech .laravel-logo,
-          #portfolio-wrapper .projects .showcase .description .project-tech .angular-logo {
+          #portfolio-wrapper .projects .showcase .description .project-tech .angular-logo,
+          #portfolio-wrapper .projects .showcase .description .project-tech .bootstrap-logo,
+          #portfolio-wrapper .projects .showcase .description .project-tech .mongodb-logo,
+          #portfolio-wrapper .projects .showcase .description .project-tech .firebase-logo {
             height: 40px;
             width: 40px;
             margin: 0 5px; }
@@ -105,7 +108,7 @@
       #portfolio-wrapper .projects .showcase .description {
         float: right;
         width: 45%;
-        margin-top: 50px;
+        margin-top: 32px;
         word-wrap: break-word; }
         #portfolio-wrapper .projects .showcase .description h3 {
           margin: 15px 0 15px 5px;

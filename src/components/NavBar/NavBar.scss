@@ -1,48 +1,49 @@
-@import "main.scss";
+@import 'main.scss';
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px 0;
-    background-color: #fff;
-    box-shadow: 0 0 10px 0 $text-color;
-    font-family: $primary-font;
-    font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 $text-color;
+  font-family: $primary-font;
+  font-size: 18px;
 
-    .fa-bars, .brand {
-        color: $text-color;
-        margin: 0 1em;
-    }
+  .fa-bars,
+  .brand {
+    color: $text-color;
+    margin: 0 1em;
+  }
 
-    a {
-        text-decoration: none;
-        color: $text-color;
-    }
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
 }
 
-@media(min-width: 1024px) {
-    .nav {
-        position: fixed; 
-        overflow: hidden;
-        top: 0;
-        z-index: 999;
-        
-        .brand {
-            a:hover {
-                border-bottom: 2px solid $theme-color;
-            }
-        }
+@media (min-width: 1024px) {
+  .nav {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 999;
 
-        .nav-links {
-            display: inline-block;
-            span {
-                margin: 0 1em;
-            }
-            span:hover {
-                border-bottom: 2px solid $theme-color;
-            }
-        }
+    .brand {
+      a:hover {
+        opacity: 0.8;
+      }
     }
+
+    .nav-links {
+      display: inline-block;
+      span {
+        margin: 0 1em;
+      }
+      span:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }
